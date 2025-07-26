@@ -1,4 +1,4 @@
-let calculadora = require("../models/calculadora")
+let calculadora = require("../../models/calculadora.js")
 
 test("somar 2+2 deveria retornar 4", () => {
   let resultado = calculadora.somar(2,5);
@@ -10,3 +10,5 @@ test("somar 5 + 100 deveria retornar 105", () => {
   console.log(resultado)
   expect(resultado).toBe(105)
 });
+
+exports.somar = this.somar;
